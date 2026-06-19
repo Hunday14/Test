@@ -20,7 +20,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="⚡ TAP EMPIRE ⚡"
+            android:text="TAP EMPIRE"
             android:textSize="17sp"
             android:textColor="#FFD700"
             android:textStyle="bold"
@@ -97,8 +97,10 @@
             android:id="@+id/btn_click"
             android:layout_width="155dp"
             android:layout_height="155dp"
-            android:text="🪙"
-            android:textSize="52sp"
+            android:text="KLIKK!"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#111111"
             android:background="@drawable/click_button_bg"
             android:stateListAnimator="@null"
             android:elevation="8dp"/>
@@ -121,7 +123,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="⚒  ÉPÜLETEK"
+                android:text="EPULETEK"
                 android:textSize="12sp"
                 android:textColor="#4fc3f7"
                 android:textStyle="bold"
@@ -146,7 +148,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="✨  FEJLESZTÉSEK"
+                android:text="FEJLESZTESEK"
                 android:textSize="12sp"
                 android:textColor="#e94560"
                 android:textStyle="bold"
