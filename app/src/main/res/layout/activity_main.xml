@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1a1a2e">
+
+    <!-- HUD -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#16213e"
+        android:paddingTop="36dp"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:elevation="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ TAP EMPIRE ⚡"
+            android:textSize="17sp"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:letterSpacing="0.12"/>
+
+        <TextView
+            android:id="@+id/tv_gold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="34sp"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_gps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/mp"
+                android:textSize="13sp"
+                android:textColor="#aaaaaa"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   ·   "
+                android:textSize="13sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:id="@+id/tv_gpc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/klikk"
+                android:textSize="13sp"
+                android:textColor="#aaaaaa"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   ·   "
+                android:textSize="13sp"
+                android:textColor="#555555"/>
+
+            <TextView
+                android:id="@+id/tv_clicks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 klikk"
+                android:textSize="13sp"
+                android:textColor="#aaaaaa"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Click button area -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="22dp"
+        android:paddingBottom="14dp">
+
+        <Button
+            android:id="@+id/btn_click"
+            android:layout_width="155dp"
+            android:layout_height="155dp"
+            android:text="🪙"
+            android:textSize="52sp"
+            android:background="@drawable/click_button_bg"
+            android:stateListAnimator="@null"
+            android:elevation="8dp"/>
+    </LinearLayout>
+
+    <!-- Shop scroll -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbarStyle="outsideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <!-- Buildings header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⚒  ÉPÜLETEK"
+                android:textSize="12sp"
+                android:textColor="#4fc3f7"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/buildings_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#2a2a4a"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="14dp"/>
+
+            <!-- Upgrades header -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="✨  FEJLESZTÉSEK"
+                android:textSize="12sp"
+                android:textColor="#e94560"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:id="@+id/upgrades_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="24dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
